@@ -1,0 +1,19 @@
+# 🛠️ Ethical Hacking Toolkit
+
+A collection of Python-based tools for network recon and enumeration.
+Built on Kali Linux for educational purposes.
+
+---
+
+## 📦 Tools
+
+| Tool | Description |
+|------|-------------|
+| [dns_enum](./dns_enum/) | DNS record enumerator (A, MX, TXT, SOA, AAAA) |
+
+> More tools coming soon...
+
+---
+
+## ⚠️ Disclaimer
+For educational and authorized testing only.
