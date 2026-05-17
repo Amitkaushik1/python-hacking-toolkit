@@ -24,7 +24,7 @@ A fast multi-threaded subdomain enumeration tool written in Python. It uses a wo
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/python-hacking-toolkit.git
+git clone https://github.com/Amitkaushik1/python-hacking-toolkit.git
 cd python-hacking-toolkit/subdomain_finder
 ```
 
