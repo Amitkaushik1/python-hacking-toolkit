@@ -10,6 +10,7 @@ Built on Kali Linux for educational purposes.
 | Tool | Description |
 |------|-------------|
 | [dns_enum](./dns_enum/) | DNS record enumerator (A, MX, TXT, SOA, AAAA) |
+| [subdomain_finder](./Subdomain%20Finder/) | Multi-threaded subdomain enumerator |
 
 > More tools coming soon...
 
