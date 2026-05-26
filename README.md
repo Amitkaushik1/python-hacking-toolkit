@@ -27,21 +27,6 @@ cd python-hacking-toolkit
 
 ---
 
-## 🚀 Usage
-
-Each tool is in its own folder with its own README. Navigate to the tool folder and follow the instructions:
-
-```bash
-cd dns_enum
-python3 dns_enum.py
-```
-
-```bash
-cd subdomain_finder
-python3 subdomain_finder.py
-```
-
----
 
 ## ⚠️ Disclaimer
 
