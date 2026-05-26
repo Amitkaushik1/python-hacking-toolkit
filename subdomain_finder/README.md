@@ -108,5 +108,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-Made with ❤️ on Kali Linux  
+Made with ❤️ on Kali Linux by **Amitkaushik1**
+GitHub: [Amitkaushik1](https://github.com/Amitkaushik1)  
 Feel free to fork, star ⭐, and contribute!
