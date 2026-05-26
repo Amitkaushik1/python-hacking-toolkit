@@ -11,6 +11,8 @@ Built on Kali Linux for educational purposes.
 |------|-------------|
 | [dns_enum](./dns_enum/) | DNS record enumerator (A, MX, TXT, SOA, AAAA) |
 | [subdomain_finder](./subdomain_finder/) | Multi-threaded subdomain enumerator |
+| [PDF_Protector](./PDF_Protector/) | Password protect any PDF file |
+| [pdf_password_cracker](./pdf_password_cracker/) | Multi-threaded PDF password cracker |
 
 > More tools coming soon...
 
