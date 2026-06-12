@@ -8,10 +8,9 @@ def scan(ip, result_queue):
     arp_request = scapy.ARP(pdst=ip)
     broadcast = scapy.Ether(dst='ff:ff:ff:ff:ff:ff')
     packet = broadcast/arp_request
-
     answer = scapy.srp(packet, timeout=1, verbose=False)[0]
-    clients = []
 
+    clients = []
     for client in answer:
         client_info = {'IP':client[1].psrc, 'MAC':client[1].hwsrc}
         try:
@@ -19,8 +18,9 @@ def scan(ip, result_queue):
             client_info['Hostname'] = hostname
         except socket.herror:
             client_info['Hostname'] = 'Unknown'
-            clients.append(client_info)
-            result_queue.put(clients)
+        clients.append(client_info)
+    if clients:
+        result_queue.put(clients)
 
 def print_result(result):
     print('IP' + " "*20 + 'MAC' + ""*20 + " "*20 + 'Hostname')
@@ -31,7 +31,7 @@ def print_result(result):
 def main(cidr):
     results_queue = Queue()
     threads = []
- 
+    
     network = ipaddress.ip_network(cidr, strict=False)
     for ip in network.hosts():
         thread = threading.Thread(target=scan, args=(str(ip), results_queue))
@@ -39,10 +39,11 @@ def main(cidr):
         threads.append(thread)
     for thread in threads:
         thread.join()
-
+    
     all_client = []
     while not results_queue.empty():
         all_client.extend(results_queue.get())
+        
     print_result(all_client)
 
 if __name__ == '__main__':
