@@ -13,6 +13,7 @@ Built on Kali Linux for educational purposes.
 | [subdomain_finder](./subdomain_finder/) | Multi-threaded subdomain enumerator |
 | [PDF_Protector](./PDF_Protector/) | Password protect any PDF file |
 | [pdf_password_cracker](./pdf_password_cracker/) | Multi-threaded PDF password cracker |
+| [Network_Scanner](./Network_Scanner/) | ARP-based multi-threaded network scanner |
 
 > More tools coming soon...
 
